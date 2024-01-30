@@ -22,6 +22,9 @@ ul > li a {
 a {
   text-decoration: none;
 }
+a:hover {
+  text-decoration: underline;
+}
 
 /* HEADER */
 .nav-link {
@@ -81,6 +84,9 @@ input {
   border: none;
   padding: 0.5rem;
 }
+button:hover {
+  cursor: pointer;
+}
 
 .lang {
   display: flex;
@@ -98,7 +104,8 @@ input {
 
 footer {
   background-color: #f2f2f2;
-  height: 30vh;
+  margin-top: 5rem;
+  height: 15vh;
 }
 
 .panel {
@@ -120,6 +127,10 @@ footer {
 }
 
 @media only screen and (max-width: 800px) {
+  footer {
+    margin-top: 0;
+    height: 30vh;
+  }
   .panel {
     flex-direction: column;
     align-items: center;
